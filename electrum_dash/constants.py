@@ -40,10 +40,10 @@ def read_json(filename, default):
 class BitcoinMainnet:
 
     TESTNET = False
-    WIF_PREFIX = 204
-    ADDRTYPE_P2PKH = 76
-    ADDRTYPE_P2SH = 16
-    GENESIS = "00000ffd590b1485b3caadc19b22e6379c733355108f107a430458cdf3407ab6"
+    WIF_PREFIX = 153
+    ADDRTYPE_P2PKH = 63
+    ADDRTYPE_P2SH = 85
+    GENESIS = "000007310352e125746236cbdf0a5bafbe2fba9583057a68efe2ce73ecb0cd64"
     DEFAULT_PORTS = {'t': '50001', 's': '50002'}
     DEFAULT_SERVERS = read_json('servers.json', {})
     CHECKPOINTS = read_json('checkpoints.json', [])
@@ -63,8 +63,8 @@ class BitcoinTestnet:
 
     TESTNET = True
     WIF_PREFIX = 239
-    ADDRTYPE_P2PKH = 140
-    ADDRTYPE_P2SH = 19
+    ADDRTYPE_P2PKH = 63
+    ADDRTYPE_P2SH = 187
     GENESIS = "00000bafbc94add76cb75e2ec92894837288a481e5c005f6563d91623bf8bc2c"
     DEFAULT_PORTS = {'t': '51001', 's': '51002'}
     DEFAULT_SERVERS = read_json('servers_testnet.json', {})
